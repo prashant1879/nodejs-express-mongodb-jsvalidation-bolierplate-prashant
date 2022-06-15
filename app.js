@@ -15,6 +15,12 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(compression());
 app.use(expressValidator());
+
+var swaggerUi = require('swagger-ui-express'),
+swaggerDocument = require('./swagger.json');
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 require('./routes.js')(app);
 app.listen(process.env.SERVER_PORT);
 console.log(`${process.env.PROJECT_NAME} START ON:>> ${process.env.SERVER_PORT}`);
