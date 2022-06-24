@@ -12,10 +12,10 @@ This repository for everyone.
 
 ### Using Git (recommended)
 
-1.  Clone the project from github. Change "sndk-prashant" to your project name.
+1.  Clone the project from github. Change "nodejs-express-mongodb-jsvalidation-bolierplate-prashant" to your project name.
 
 ```bash
-git clone https://github.com/prashant1879/sndk-prashant.git ./sndk-prashant
+git clone https://github.com/prashant1879/nodejs-express-mongodb-jsvalidation-bolierplate-prashant.git ./nodejs-express-mongodb-jsvalidation-bolierplate-prashant
 ```
 
 ### Using manual download ZIP
@@ -26,14 +26,14 @@ git clone https://github.com/prashant1879/sndk-prashant.git ./sndk-prashant
 ### Install npm dependencies after installing (Git or manual download)
 
 ```bash
-cd sndk-prashant
+cd nodejs-express-mongodb-jsvalidation-bolierplate-prashant
 npm install && npm update
 ```
 
 ### IMPORTING DATABASED USING LINUX TERMINAL
 
 ```bash
-sudo mongorestore --db sndk --verbose ./sndk-prashant/0_files/database/BSON_IMPORT
+sudo mongorestore --db bolierplate --verbose ./nodejs-express-mongodb-jsvalidation-bolierplate-prashant/0_files/database/BSON_IMPORT
 ```
 
 ### Setting up environments
@@ -53,7 +53,7 @@ sudo mongorestore --db sndk --verbose ./sndk-prashant/0_files/database/BSON_IMPO
 │   ├── database
 │   │   ├──BSON_IMPORT
 │   │   ├──Studio3T JSON IMPORT
-│   └── sndk-prashant.postman_collection.json
+│   └── nodejs-express-mongodb-jsvalidation-bolierplate-prashant.postman_collection.json
 └── app
     ├── controllers
     │   ├── project.controller.js
